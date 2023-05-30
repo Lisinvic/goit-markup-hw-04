@@ -95,7 +95,8 @@ img {
 
 .header {
   border-bottom: 1px solid var(--accent);
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -183,15 +184,15 @@ img {
 
 .hero {
   background-image: linear-gradient(
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)
-  ),
-  url(../images/hero_bg.jpeg);
-max-width: 1440px;
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-margin: 0 auto;
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero_bg.jpeg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
 }
 
 .hero-container {
@@ -421,8 +422,6 @@ margin: 0 auto;
 }
 
 .cutomers-icon {
-  width: 104px;
-  height: 56px;
   fill: currentColor;
 }
 
@@ -522,7 +521,9 @@ margin: 0 auto;
   align-items: baseline;
 }
 
-
+.footer-logo-paragraf {
+  margin-right: 120px;
+}
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -549,14 +550,6 @@ margin: 0 auto;
   max-width: 264px;
 }
 
-.footer-item {
-  margin-right: 120px;
-}
-
-.footer-item:last-child {
-  margin-right: 0;
-}
-
 .footer-soc-name {
   color: var(--white-background);
   margin-bottom: 16px;
@@ -565,7 +558,7 @@ margin: 0 auto;
 .footer-soc-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
 }
 
 .footer-soc-item {
