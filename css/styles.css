@@ -95,6 +95,7 @@ img {
 
 .header {
   border-bottom: 1px solid var(--accent);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -180,15 +181,17 @@ img {
 
 /* -------Hero section------- */
 
-.hero-bg {
+.hero {
   background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero_bg.jpeg);
-
-  background-repeat: no-repeat;
-  background-position: center;
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  ),
+  url(../images/hero_bg.jpeg);
+max-width: 1440px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+margin: 0 auto;
 }
 
 .hero-container {
@@ -374,7 +377,7 @@ img {
 
 .team-soc-link:hover,
 .team-soc-link:focus {
-  background-color: var(--success);
+  background-color: var(--pressed-state);
 }
 
 /* --------Customers section-------- */
@@ -385,6 +388,7 @@ img {
 }
 .customers-title {
   margin-bottom: 72px;
+  color: var(--dark);
 }
 
 .customers-list {
@@ -403,6 +407,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--subtle-text);
 }
 
 .customers-link:hover,
@@ -412,13 +417,13 @@ img {
 
 .customers-link:hover .cutomers-icon,
 .customers-link:focus .cutomers-icon {
-  fill: var(--pressed-state);
+  color: var(--pressed-state);
 }
 
 .cutomers-icon {
   width: 104px;
   height: 56px;
-  fill: var(--subtle-text);
+  fill: currentColor;
 }
 
 /* --------------Portfolio Page-------------- */
@@ -473,6 +478,10 @@ img {
   gap: 48px 24px;
 }
 
+.partfolio-link {
+  display: block;
+}
+
 .partfolio-item-text {
   padding: 32px 16px;
   border: 1px solid var(--accent);
@@ -485,8 +494,8 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
-.partfolio-item:hover,
-.partfolio-item:focus {
+.partfolio-link:hover,
+.partfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -508,9 +517,12 @@ img {
   background: var(--dark);
 }
 
-.footer-list {
+.footer-container {
   display: flex;
+  align-items: baseline;
 }
+
+
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
