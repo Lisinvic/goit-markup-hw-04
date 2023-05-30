@@ -414,10 +414,6 @@ img {
 .customers-link:hover,
 .customers-link:focus {
   border-color: var(--pressed-state);
-}
-
-.customers-link:hover .cutomers-icon,
-.customers-link:focus .cutomers-icon {
   color: var(--pressed-state);
 }
 
